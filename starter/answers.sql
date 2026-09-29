@@ -1,9 +1,13 @@
-CREATE TABLE info090
-(
-info090 INT(5)PRIMARY KEY,
-info090name VARCHAR(20),
-HOD VARCHAR(20)
-);
-desc info090;
-show tables;
+CREATE DATABASE IF NOT EXISTS assignmentdb;
+USE assignmentdb;
 
+DROP TABLE IF EXISTS Student;
+
+CREATE TABLE Student (
+    info090 INT NOT NULL PRIMARY KEY,
+    info090name VARCHAR(20),
+    HOD VARCHAR(20)
+);
+
+DESC Student;
+SHOW TABLES;
